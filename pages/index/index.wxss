@@ -1,6 +1,6 @@
 swiper,swiper image {
   width:100%;
-  height:500rpx;
+  height:400rpx;
 }
 
 .pro{
@@ -14,6 +14,7 @@ swiper,swiper image {
 .pro image {
   width:100%;
   height:200rpx;
+  margin-bottom:10rpx;
 }
 
 .container {
