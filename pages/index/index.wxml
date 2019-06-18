@@ -1,16 +1,37 @@
-<!--index.wxml-->
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{ !hasUserInfo && canIUse }}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-      获取头像昵称
-    </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" mode="cover"></image>
-      <text class="userinfo-nickname">{{ userInfo.nickName }}</text>
-    </block>
+  <view class="pro">
+      <image src="/images/list_1.jpg"></image>
+      <view class="proName">柜子的秘密</view>
+      <view class="proPrice"># 306.00</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{ motto }}</text>
-    <button class="user-botton" bindtap="clickMe">按我</button>
+   <view class="pro">
+      <image src="/images/list_1.jpg"></image>
+      <view class="proName">柜子的秘密</view>
+      <view class="proPrice"># 306.00</view>
+  </view>
+   <view class="pro">
+      <image src="/images/list_1.jpg"></image>
+      <view class="proName">柜子的秘密</view>
+      <view class="proPrice"># 306.00</view>
+  </view>
+   <view class="pro">
+      <image src="/images/list_1.jpg"></image>
+      <view class="proName">柜子的秘密</view>
+      <view class="proPrice"># 306.00</view>
+  </view>
+   <view class="pro">
+      <image src="/images/list_1.jpg"></image>
+      <view class="proName">柜子的秘密</view>
+      <view class="proPrice"># 306.00</view>
   </view>
 </view>
