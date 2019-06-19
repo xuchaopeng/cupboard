@@ -1,8 +1,5 @@
-var filters = {
-  tofix: function (v, count){
-    return v.tofixed(count);
-  }
-}
 module.exports = {
-  tofix: filters.tofix
+  toFix: function (v, count){
+    return Number(v).toFixed(count);
+  }
 }

@@ -1,3 +1,4 @@
+<wxs module="filter" src="index.wxs"></wxs>
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
@@ -10,6 +11,6 @@
   <view class="pro" wx:for="{{proList}}">
     <image src="/images/list_1.jpg"></image>
     <view class="proName">{{item.proName}}</view>
-    <view class="proPrice">¥ {{item.proPrice}}</view>
+    <view class="proPrice">¥ {{filter.toFix(item.proPrice,2)}}</view>
   </view>
 </view>
